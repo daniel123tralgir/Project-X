@@ -1,5 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const responseObject = {
+  "hi ProjectX": "Hi!",
+  "wat": "Say what?",
+  "lol": "roflmaotntpmp",
+  "schau Katzenvideos": "ok"
+};
 
 
 bot.on('ready', () => {
@@ -15,27 +21,13 @@ bot.on('ready', () => {
 })
 
 
-bot.on('message', msg => {
-  if (msg.content === 'schau Katzenvideos') {
-    msg.channel.send('ok');
-    bot.user.setActivity("Katzenvideos",{type: "WATCHING"} )
+bot.on('message', (message) => {
+    if(responseObject[message.content]) {
+    message.channel.send(responseObject[message.content]);
   }
-    
-    if (msg.content === 'hallo ProjectX') {
-    msg.channel.send('hi');
-  }
+
 
  
-    
-
-  if (msg.content === 'schau xxx') {
-    bot.user.setActivity("Pornos",{type: "WATCHING"} )
-
-    msg.channel.send('Jaaa;)');
-  }
-
-
- }
 
 
 
