@@ -36,7 +36,7 @@ bot.on('message', (message) => {
 );
 Welcome(bot, {
 
-  publicmsg : "Willkommen bei Project:x: @Project X, nun bist du Teil der :x:-Gemeinschaft :heart:"
+  publicmsg : "Willkommen bei Project:x: @MEMBER, nun bist du Teil der :x:-Gemeinschaft :heart:"
   "Bitte stelle dich bei #vorstellung  kurz vor:fire:",
   publicchannel : "willkommen"
   })
