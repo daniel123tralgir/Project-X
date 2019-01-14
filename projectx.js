@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const Welcome = require("discord-welcome");
 const bot = new Discord.Client();
 const responseObject = {
   "hi ProjectX": "Hi!",
