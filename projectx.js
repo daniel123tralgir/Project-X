@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
     // Set bot status to: "Playing with JavaScript"
-    bot.user.setActivity("Pornos",{type: "WATCHING"} )
+    bot.user.setActivity("Project X",{type: "PLAYING"} )
 
 
 
@@ -20,12 +20,13 @@ bot.on('message', msg => {
     msg.channel.send('ok');
     bot.user.setActivity("Katzenvideos",{type: "WATCHING"} )
   }
-
-  if (msg.content === 'spiel mit dir selbst') {
-    bot.user.setActivity("mit sich selbst rum",{type: "PLAYING"} )
-
-    msg.channel.send('hdf');
+    
+    if (msg.content === 'hallo ProjectX') {
+    msg.channel.send('hi');
   }
+
+ 
+    
 
   if (msg.content === 'schau xxx') {
     bot.user.setActivity("Pornos",{type: "WATCHING"} )
