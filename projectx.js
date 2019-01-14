@@ -11,6 +11,7 @@ const responseObject = {
 bot.on('ready', () => {
     // Set bot status to: "Playing with JavaScript"
     bot.user.setActivity("Project X",{type: "PLAYING"} )
+      console.log("ProjectX ist Online!");
 
 
 
