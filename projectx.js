@@ -22,17 +22,16 @@ bot.on('ready', () => {
 
 
 bot.on('message', (message) => {
-    if(responseObject[message.content]) {
+  if(responseObject[message.content]) {
     message.channel.send(responseObject[message.content]);
   }
 
 
+ }
+
+  
  
 
-
-
-   
-
-;
+);
 // THIS  MUST  BE  THIS  WAY
 bot.login(process.env.BOT_TOKEN);
