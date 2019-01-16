@@ -16,7 +16,8 @@ const responseObject = {
   ",xp PX_Shanilla": "PX_Shanilla: 70661xp",
   ",xp JokerHD": "JokerHD: 55519xp",
   ",xp RiRiJane": "RiRiJane: 263844xp",
-  ",xp PX_Shanilla": "PX_Shanilla: 70661xp",
+  ",xp PX_Shanilla": "PX_Shanilla: 70756xp",
+   ",xp xSilentPainx": "xSilentPainx: 156519xp",
 
   
 };
