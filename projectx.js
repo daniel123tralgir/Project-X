@@ -9,7 +9,16 @@ const responseObject = {
   "spiel Fortnite": "Nö",
   "oof": "big oof",
   "aaa": "nerv nicht",
-  "hahaha": "rofl"
+  "hahaha": "rofl",
+  ",xp ix9ine_PX": "ix9ine_PX: 18398xp",
+  ",xp PX_TopCrits": "PX_TopCrits: 58443xp",
+  ",xp PX_Jxssx_": "PX_Jxssx_: 57690xp",
+  ",xp PX_Shanilla": "PX_Shanilla: 70661xp",
+  ",xp JokerHD": "JokerHD: 55519xp",
+  ",xp RiRiJane": "RiRiJane: 263844xp",
+  ",xp PX_Shanilla": "PX_Shanilla: 70661xp",
+
+  
 };
 
 
