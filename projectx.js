@@ -2,14 +2,7 @@ const Discord = require('discord.js');
 const Welcome = require("discord-welcome");
 const bot = new Discord.Client();
 const responseObject = {
-  "hi ProjectX": "Hi!",
-  "wat": "Say what?",
-  "lol": "roflmaotntpmp",
-  "schau Katzenvideos": "ok",
-  "spiel Fortnite": "Nö",
-  "oof": "big oof",
-  "aaa": "nerv nicht",
-  "hahaha": "rofl",
+  
   ",xp ix9ine_PX": "ix9ine_PX: 18398xp",
   ",xp PX_TopCrits": "PX_TopCrits: 58443xp",
   ",xp PX_Jxssx_": "PX_Jxssx_: 57690xp",
@@ -25,6 +18,17 @@ const responseObject = {
     ",xp aa5z17": "aa5z17: 56707xp",  
       ",xp Structure": "Structure: 55067xp",  
     ",xp PX_Mxlandrs": "PX_Mxlandrs: 30128xp"
+  
+};
+const sayObject = {
+  "hi ProjectX": "Hi!",
+  "wat": "Say what?",
+  "lol": "roflmaotntpmp",
+  "schau Katzenvideos": "ok",
+  "spiel Fortnite": "Nö",
+  "oof": "big oof",
+  "aaa": "nerv nicht",
+  "hahaha": "rofl",
   
 };
 
@@ -45,7 +49,11 @@ bot.on('ready', () => {
 
 bot.on('message', (message) => {
   if(responseObject[message.content]) {
-    message.respond(responseObject[message.content]);
+    message.reply(responseObject[message.content]);
+  }
+  
+   if(sayObject[message.content]) {
+    message.channel.send(sayObject[message.content]);
   }
 
 
