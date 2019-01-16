@@ -23,6 +23,7 @@ const responseObject = {
   ",xp flavia": "flavia: 275356xp",  
     ",xp PX_WolfoLP": "PX_WolfoLP: 4000xp", 
     ",xp aa5z17": "aa5z17: 56707xp",  
+      ",xp Structure": "Structure: 55067xp",  
     ",xp PX_Mxlandrs": "PX_Mxlandrs: 30128xp"
   
 };
