@@ -45,7 +45,7 @@ bot.on('ready', () => {
 
 bot.on('message', (message) => {
   if(responseObject[message.content]) {
-    message.channel.send(responseObject[message.content]);
+    message.respond(responseObject[message.content]);
   }
 
 
