@@ -5,7 +5,9 @@ const responseObject = {
   "hi ProjectX": "Hi!",
   "wat": "Say what?",
   "lol": "roflmaotntpmp",
-  "schau Katzenvideos": "ok"
+  "schau Katzenvideos": "ok",
+  "spiel Fortnite": "Nö",
+  "oof": "big oof"
 };
 
 
