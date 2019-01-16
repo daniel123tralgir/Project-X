@@ -7,7 +7,9 @@ const responseObject = {
   "lol": "roflmaotntpmp",
   "schau Katzenvideos": "ok",
   "spiel Fortnite": "Nö",
-  "oof": "big oof"
+  "oof": "big oof",
+  "aaa": "nerv nicht",
+  "hahaha": "rofl"
 };
 
 
