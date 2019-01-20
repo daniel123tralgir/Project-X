@@ -66,7 +66,7 @@ bot.on('message', (message) => {
 
 );
 Welcome(bot, {
-
+  privatemsg : "Willkommen bei Project X!",
   publicmsg : "Willkommen bei Project:x: @MEMBER, nun bist du Teil der :x:-Gemeinschaft :heart: \nBitte stelle dich bei <#523059031603150849>  kurz vor:fire:",
   publicchannel : "523054754113257483"
   })
