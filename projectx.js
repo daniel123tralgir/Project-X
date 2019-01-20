@@ -17,7 +17,7 @@ const responseObject = {
     ",xp PX_WolfoLP": "PX_WolfoLP: 4000xp", 
     ",xp aa5z17": "aa5z17: 56707xp",  
       ",xp Structure": "Structure: 55067xp",  
- ",info CR_Pexxes": "WAS DAS?", 
+
     ",xp PX_Mxlandrs": "PX_Mxlandrs: 30128xp"
   
 };
@@ -30,6 +30,7 @@ const sayObject = {
   "oof": "big oof",
   "aaa": "nerv nicht",
   "hahaha": "rofl",
+   ",info CR_Pexxes": "WAS DAS?", 
   
 };
 
