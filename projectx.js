@@ -30,7 +30,7 @@ const sayObject = {
   "oof": "big oof",
   "aaa": "nerv nicht",
   "hahaha": "rofl",
-   ",info CR_Pexxes": "WAS DAS?", 
+   ",info CR_Pexxes": "PEXXES, WAS DAS?", 
   
 };
 
