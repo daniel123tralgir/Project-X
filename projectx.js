@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const Welcome = require("discord-welcome");
+const Welcome = require("./welcome.js");
 const bot = new Discord.Client();
 const responseObject = {
   
@@ -68,7 +68,10 @@ bot.on('message', (message) => {
 Welcome(bot, {
   privatemsg : "Willkommen bei Project X!",
   publicmsg : "Willkommen bei Project:x: @MEMBER, nun bist du Teil der :x:-Gemeinschaft :heart: \nBitte stelle dich bei <#523059031603150849>  kurz vor:fire:",
-  publicchannel : "523054754113257483"
+  publicchannel : "523054754113257483",
+  publicmsg1 : "@MEMBER hat den Server verlassen. RIP @MEMBER, die Werwölfe haben dich erwischt.:slight_frown:",
+  publicchannel1 : "523054754113257483"
+
   })
 // THIS  MUST  BE  THIS  WAY
 bot.login(process.env.BOT_TOKEN);
