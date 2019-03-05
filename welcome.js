@@ -91,7 +91,7 @@ module.exports = function(bot, options) {
           }
           else {
             msg = publicmsg1.replace(`@MEMBER`, `${member.user}`);
-            msg = msg.replace(`@GUILDNAME`, `${member.guild.name}`);
+            msg = msg.replace(`@GUILDNAME`, `${member.guild.id}`);
             
             // Send the Message
             channel.send(msg);
@@ -108,7 +108,7 @@ module.exports = function(bot, options) {
     // ********** CODE FOR PRIVATE MESSAGE **********            
     if (privatemsg1) {
       msg = publicmsg1.replace(`@MEMBER`, `${member.user}`);
-      msg = msg.replace(`GUILDNAME`, `${member.guild.name}`);
+      msg = msg.replace(`@GUILDNAME`, `${member.guild.name}`);
       member.send(privatemsg1)  
     }
   });
