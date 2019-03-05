@@ -32,7 +32,6 @@ const sayObject = {
   "oof": "big oof",
   "aaa": "nerv nicht",
   "hahaha": "rofl",
-   ",info CR_Pexxes": "???", 
   
 };
 
