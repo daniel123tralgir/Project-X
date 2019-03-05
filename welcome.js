@@ -91,7 +91,7 @@ module.exports = function(bot, options) {
           }
           else {
             msg = publicmsg1.replace(`@MEMBER`, `${member.user}`);
-            msg = msg.replace(`@GUILDNAME`, `${member.guild.id}`);
+            msg = msg.replace(`@GUILDNAME`, `${member.guild.name}`);
             
             // Send the Message
             channel.send(msg);
