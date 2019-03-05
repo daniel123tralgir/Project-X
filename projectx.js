@@ -2,23 +2,25 @@ const Discord = require('discord.js');
 const Welcome = require("./welcome.js");
 const bot = new Discord.Client();
 const responseObject = {
-  
-  ",xp ix9ine_PX": "ix9ine_PX: 18398xp",
-  ",xp PX_TopCrits": "PX_TopCrits: 58443xp",
-  ",xp PX_Jxssx_": "PX_Jxssx_: 57690xp",
-  ",xp PX_Shanilla": "PX_Shanilla: 70661xp",
-  ",xp JokerHD": "JokerHD: 55519xp",
-  ",xp RiRiJane": "RiRiJane: 263844xp",
-  ",xp PX_Shanilla": "PX_Shanilla: 70756xp",
-   ",xp xSilentPainx": "xSilentPainx: 156519xp",
-     ",xp PX_MacJakob": "PX_MacJakob: 1689xp",
-  ",xp PX_ToniStark": "PX_ToniStark: 60264xp",
-  ",xp flavia": "flavia: 275356xp",  
-    ",xp PX_WolfoLP": "PX_WolfoLP: 4000xp", 
-    ",xp aa5z17": "aa5z17: 56707xp",  
-      ",xp Structure": "Structure: 55067xp",  
 
-    ",xp PX_Mxlandrs": "PX_Mxlandrs: 30128xp"
+  "bewerber": "Danke für die Bewerbung! Die @/Clan-Anführer und @/Clan-Vice-Anführer werden sich so bald wie möglich darum kümmern.",  
+    "Bewerber": "Danke für die Bewerbung! Die @/Clan-Anführer und @/Clan-Vice-Anführer werden sich so bald wie möglich darum kümmern.",  
+  ",xp ix9ine": "ix9ine_PX: constxp",
+  ",xp TopCrits": "PX_TopCrits: constxp",
+  ",xp PX_Jxssx_": "PX_Jxssx_: constxp",
+  ",xp PX_Shanilla": "PX_Shanilla: constxp",
+  ",xp JokerHD": "JokerHD: constxp",
+  ",xp RiRiJane": "RiRiJane: constxp",
+  ",xp PX_Shanilla": "PX_Shanilla: constxp",
+   ",xp xSilentPainx": "xSilentPainx: constxp",
+     ",xp PX_MacJakob": "PX_MacJakob: constxp",
+  ",xp PX_ToniStark": "PX_ToniStark: constxp",
+  ",xp flavia": "flavia: constxp",  
+    ",xp PX_WolfoLP": "PX_WolfoLP: constxp", 
+    ",xp aa5z17": "aa5z17: constxp",  
+      ",xp Structure": "Structure: constxp",  
+
+    ",xp PX_Mxlandrs": "PX_Mxlandrs: constxp"
   
 };
 const sayObject = {
