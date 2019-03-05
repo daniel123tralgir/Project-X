@@ -31,7 +31,7 @@ const sayObject = {
   "spiel Fortnite": "Nö",
   "oof": "big oof",
   "aaa": "nerv nicht",
-  "hahaha": "rofl",
+  "hahaha": "rofl"
   
 };
 
