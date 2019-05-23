@@ -57,14 +57,14 @@ bot.on('message', (message) => {
   if(message.author.bot) return;
 
   else{
-    var msg = message.content.toLowerCase();
 
+    
     if(responseObject[message.content]) {
       message.reply(responseObject[message.content]);
     }
   
-    if(sayObject[msg]) {
-    message.channel.send(sayObject[message.content]);
+    if(sayObject[message.content]) {
+    message.channel.send(sayObject[message.content.toLowerCase()]);
     }
 
   }
