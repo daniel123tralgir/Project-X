@@ -54,6 +54,7 @@ bot.on('ready', () => {
 
 
 bot.on('message', (message) => {
+  
   if(responseObject[message.content]) {
     message.reply(responseObject[message.content]);
   }
@@ -64,7 +65,14 @@ bot.on('message', (message) => {
 
 
  }
+       
+bot.on('message', message => {
+  if(message.member.roles.has(581190930950782978)) return; // do nothing
+ message.reply("bismalstill");
+}else{
+ message.reply("bismallut");
 
+})
   
  
 
