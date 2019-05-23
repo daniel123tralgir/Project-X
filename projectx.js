@@ -9,10 +9,10 @@ const responseObject = {
   
 };
 const sayObject = {
-  "afk": "	halts maul werner",
+  "afk": "halts maul werner",
   "play": "nein",
   "xd": "witzig...",
-  "deutschland": "	Lebt",
+  "deutschland": "Lebt",
   "spiel Fortnite": "Nö",
   "oof": "big oof",
   "aaa": "nerv nicht",
@@ -27,6 +27,11 @@ const sayObject = {
   "bb": "schüss",
   "gn": "Gute Nacht Schätzchen;)",        
   "gn8": "Gute Nacht",
+  "wow": "sry ich kann nix",
+  "hellwach": "ok cool",
+  "wow": "sry ich kann nix",
+  "wow": "sry ich kann nix",
+  "wow": "sry ich kann nix",
   "wow": "sry ich kann nix",
   "?play": "kein Bock"
   
@@ -52,11 +57,13 @@ bot.on('message', (message) => {
   if(message.author.bot) return;
 
   else{
+    var msg = message.content.toLowerCase();
+
     if(responseObject[message.content]) {
       message.reply(responseObject[message.content]);
     }
   
-    if(sayObject[message.content.toLowerCase()]) {
+    if(sayObject[msg]) {
     message.channel.send(sayObject[message.content]);
     }
 
