@@ -20,15 +20,14 @@ const sayObject = {
     "alter": "17",
     "nerv nicht": "ok cool",
     "was das": "Pizza?",
-    "ja": "ja",
+
       "Ja": "ja",
-      "JA": "ja",
-        "nein": "nö",
+
+
         "Nein": "nö",
-        "NEIN": "nö",
+       
         "nö": "nein",
-        "Nö": "nein",
-        "NÖ": "HDF",
+
           "bye": "auf wiederhören",
           "bb": "schüss",
           "gn": "Gute Nacht Schätzchen;)",        
