@@ -56,7 +56,7 @@ bot.on('message', (message) => {
       message.reply(responseObject[message.content]);
     }
   
-    if(sayObject[message.content.toLowerCase]) {
+    if(sayObject[message.content.toLowerCase()]) {
     message.channel.send(sayObject[message.content]);
     }
 
