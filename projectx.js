@@ -48,18 +48,20 @@ bot.on('ready', () => {
 
 
 bot.on('message', (message) => {
+
   if(message.author.bot) return;
+
   else{
-  if(responseObject[message.content]) {
-    message.reply(responseObject[message.content]);
-  }
+    if(responseObject[message.content]) {
+      message.reply(responseObject[message.content]);
+    }
   
-   if(sayObject[message.content]) {
+    if(sayObject[message.content.toLowerCase]) {
     message.channel.send(sayObject[message.content]);
-  }
+    }
 
   }
- }
+}
 )
 ;
 
