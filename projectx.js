@@ -16,24 +16,18 @@ const sayObject = {
   "spiel Fortnite": "Nö",
   "oof": "big oof",
   "aaa": "nerv nicht",
-    "ouf": "big ouf",
-    "alter": "17",
-    "nerv nicht": "ok cool",
-    "was das": "Pizza?",
-
-      "Ja": "ja",
-
-
-        "Nein": "nö",
-       
-        "nö": "nein",
-
-          "bye": "auf wiederhören",
-          "bb": "schüss",
-          "gn": "Gute Nacht Schätzchen;)",        
+  "ouf": "big ouf",
+  "alter": "17",
+  "nerv nicht": "ok cool",
+  "was das": "Pizza?",
+  "Ja": "ja",
+  "Nein": "nö",
+  "nö": "nein",
+  "bye": "auf wiederhören",
+  "bb": "schüss",
+  "gn": "Gute Nacht Schätzchen;)",        
   "gn8": "Gute Nacht",
-          "wow": "sry ich kann nix",
-  
+  "wow": "sry ich kann nix",
   "?play": "kein Bock"
   
 };
@@ -54,7 +48,8 @@ bot.on('ready', () => {
 
 
 bot.on('message', (message) => {
-  
+  if(message.author.bot) return;
+  else{
   if(responseObject[message.content]) {
     message.reply(responseObject[message.content]);
   }
@@ -63,7 +58,7 @@ bot.on('message', (message) => {
     message.channel.send(sayObject[message.content]);
   }
 
-
+  }
  }
 )
 ;
