@@ -66,18 +66,7 @@ bot.on('message', (message) => {
 
  }
 )
-
- bot.on('message', (message) => {
-  if(message.member.roles.has(581190930950782978)) { // do nothing
- message.reply('bismalstill');
-}
-
-else{
-  msg.channel.send('bismallut');
-
-}}
-
-);
+;
 
 // THIS  MUST  BE  THIS  WAY
 bot.login(process.env.BOT_TOKEN);
