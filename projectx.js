@@ -184,7 +184,7 @@ bot.on('message', (message) => {
 });
 //new
 bot.on('message', (message) => {
-  if (message.content.toLowerCase() === 'schau koala') {
+  if (message.content.toLowerCase() === 'pass auf koala auf') {
     if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('Gerne;))))');
           bot.user.setActivity("Koala",{type: "WATCHING"} )}
