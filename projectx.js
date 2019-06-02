@@ -83,9 +83,9 @@ bot.on('ready', () => {
     // For example:
     // client.user.setActivity("TV", {type: "WATCHING"})
 })
-//test
+//testmessage.content.toLowerCase()
 bot.on('message', (message) => {
-  if (message.content === 'Koala') {
+  if (message.content.toLowerCase() === 'koala') {
     if(message.member.roles.find(x => x.name === "admini")){
     message.channel.send('is geil');
 }else{
