@@ -159,6 +159,56 @@ bot.on('message', (message) => {
   }
 });
 //new
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'spiel fortnite') {
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('okay');
+          bot.user.setActivity("Fortnite",{type: "PLAYING"} )
+}else{
+    message.channel.send('kein Bock');
+}
+
+  }
+});
+//new
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'spiel night dream') {
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('okay');
+          bot.user.setActivity("NIGHT DREAM",{type: "PLAYING"} )
+}else{
+    message.channel.send('kein Bock');
+}
+
+  }
+});
+//new
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'schau koala') {
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('Gerne;))))');
+          bot.user.setActivity("Koala",{type: "WATCHING"} )
+    else if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('Koala, hör auf damit');
+}else{
+    message.channel.send('kein Bock');
+}
+
+  }
+});
+//new
+  bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'schau xxx') {
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('Gerne!');
+          bot.user.setActivity("Pornos",{type: "WATCHING"} )
+}else{
+    message.channel.send('kein Bock');
+}
+
+  }
+});
+//new
 
 
 
