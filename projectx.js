@@ -40,7 +40,7 @@ const sayObject = {
 
 bot.on('ready', () => {
     // Set bot status to: "Playing with JavaScript"
-    bot.user.setActivity("DEUTSCHLAND NERVT",{type: "PLAYING"} )
+    bot.user.setActivity("DAY DREAM",{type: "PLAYING"} )
       console.log("Deutschland Nervt ist Online!");
 
 
