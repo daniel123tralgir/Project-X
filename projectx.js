@@ -86,10 +86,10 @@ bot.on('ready', () => {
 //testmessage.content.toLowerCase()
 bot.on('message', (message) => {
   if (message.content.toLowerCase() === 'koala') {
-    if(message.member.roles.find(x => x.name === "admini")){
+    if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('is geil');
 }else{
-    message.channel.send('Stinkt');
+    message.channel.send('stinkt');
 }
 
   }
