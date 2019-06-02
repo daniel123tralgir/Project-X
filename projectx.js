@@ -10,20 +10,53 @@ const responseObject = {
 };
 const sayObject = {
   "afk": "halts maul werner",
+    "Afk": "halts maul werner",
+      "AFK": "halts maul werner",
   "play": "nein",
-  "xd": "witzig...",
+    "Play": "nein",
+    "PLAY": "NEIN",
+  "xD": "witzig...",
+    "Xd": "witzig...",
+    "XD": "witzig...",
+    "haha": "witzig...",
   "deutschland": "Lebt",
+    "Deutschland": "Lebt",
+    "DEUTSCHLAND": "LEBT",
   "spiel Fortnite": "Nö",
+    "Spiel Fortnite": "Nö",
+    "spiel fortnite": "Nö",
+    "SPIEL FORTNITE": "NÖ",
   "oof": "big oof",
+    "Oof": "big oof",
+    "OOF": "BIG OOF",
   "aaa": "nerv nicht",
+    "Aaa": "nerv nicht",
+    "AAA": "NERV NICHT",
   "ouf": "big ouf",
-  "alter": "17",
+    "Ouf": "big ouf",
+    "OUF": "BIG OUF",
+  "alter": "9",
+    "Alter": "8",
+    "ALTER": "7",
   "nerv nicht": "ok cool",
+    "Nerv nicht": "ok cool",
+    "NERV NICHT": "OK COOL",
   "was das": "Pizza?",
+    "WAS DAS": "PIZZA?",
+      "Was das": "Pizza?",
+    "was Das": "Pizza?",
   "Ja": "ja",
+    "ja": "ja",
+    "JA": "NEIN",
   "Nein": "nö",
+    "nein": "nö",
+      "NEIN": "NÖ",
   "nö": "nein",
+    "Nö": "nein",
+    "NÖ": "NEIN",
   "bye": "auf wiederhören",
+    "Bye": "auf wiederhören",
+    "BYE": "auf wiederhören",
   "bb": "schüss",
   "gn": "Gute Nacht Schätzchen;)",        
   "gn8": "Gute Nacht",
@@ -50,6 +83,24 @@ bot.on('ready', () => {
     // For example:
     // client.user.setActivity("TV", {type: "WATCHING"})
 })
+//test
+bot.on('message', msg => {
+  if (msg.content === 'ping') {
+    if(message.member.roles.find("name", "Admin")){
+    msg.reply('Pong!');
+}else{
+    msg.reply('no');
+}
+
+  }
+});
+//test
+
+if(message.member.roles.find("name", "Admin")){
+  // Rest of your code
+}else{
+  // not vip
+}
 
 
 bot.on('message', (message) => {
