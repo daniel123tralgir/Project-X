@@ -61,7 +61,7 @@ const sayObject = {
   "Wow": "sry ich kann nix",
   "WOW": "SRY ICH KANN NIX",
 
-  "?play": "kein Bock"
+  "?play": "kein Bock",
   
     "wat": "Say what?",
   "lol": "roflmaotntpmp",
@@ -75,7 +75,7 @@ const sayObject = {
         "Alisa": "mag Fisch",
         "oh": "yeah nahui",
         "ach komm": "ja",
-  "hahaha": "rofl",
+  "hahaha": "rofl"
   
 };
 
