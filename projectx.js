@@ -84,12 +84,12 @@ bot.on('ready', () => {
     // client.user.setActivity("TV", {type: "WATCHING"})
 })
 //test
-bot.on('message', msg => {
-  if (msg.content === 'ping') {
+bot.on('message', (message) => {
+  if (message.content === 'ping') {
     if(message.member.roles.find("name", "Admin")){
-    msg.reply('Pong!');
+    message.reply('Pong!');
 }else{
-    msg.reply('no');
+    message.reply('no');
 }
 
   }
