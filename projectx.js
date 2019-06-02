@@ -91,23 +91,17 @@ bot.on('ready', () => {
 //wordcontain
 bot.on('message', (message) => {
   if(message.content.toLowerCase().includes(thisWord)) {
-    message.channel.send('is geil');
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('Koala is geil');
+}else{
+    message.channel.send('Koala stinkt');
+}
 }
 
   }
 );
 
 //testmessage.content.toLowerCase()
-bot.on('message', (message) => {
-  if (message.content.toLowerCase() === 'koala') {
-    if(message.member.roles.find(x => x.name === "Admin")){
-    message.channel.send('is geil');
-}else{
-    message.channel.send('stinkt');
-}
-
-  }
-});
 //test
 bot.on('message', (message) => {
   if (message.content.toLowerCase() === 'katja') {
