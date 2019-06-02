@@ -49,7 +49,6 @@ const sayObject = {
   "?play": "kein Bock",
    "wat": "Say what?",
   "lol": "roflmaotntpmp",
-  "schau Katzenvideos": "ok",
   "oof": "big oof",
   "tja": "kaTJA",
     "TJA": "kaTJA",
