@@ -13,6 +13,7 @@ const responseObject = {
   
 };
 const thisWord = "koala";
+const thisWordone = "werner";
 const sayObject = {
   "play": "nein",
     "Play": "nein",
@@ -103,6 +104,22 @@ bot.on('message', (message) => {
 
   }
 );
+//wordcontain
+bot.on('message', (message) => {
+   if(message.author.bot) return;
+
+  else{
+  if(message.content.toLowerCase().includes(thisWordone)) {
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('@Mxxthi#1603 muss dir antworten');
+}else{
+    message.channel.send('Werner will dir nicht antworten');
+}
+}}
+
+  }
+);
+
 
 //testmessage.content.toLowerCase()
 //test
