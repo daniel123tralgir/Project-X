@@ -187,7 +187,7 @@ bot.on('message', (message) => {
   if (message.content.toLowerCase() === 'schau koala') {
     if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('Gerne;))))');
-          bot.user.setActivity("Koala",{type: "WATCHING"} )
+          bot.user.setActivity("Koala",{type: "WATCHING"} )}
     else if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('Koala, hör auf damit');
 }else{
