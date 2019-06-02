@@ -1,8 +1,10 @@
 const Discord = require('discord.js');
-const emitter = new EventEmitter()
-emitter.setMaxListeners(0)
+
+
 const Welcome = require("./welcome.js");
 const bot = new Discord.Client();
+const emitter = new EventEmitter()
+emitter.setMaxListeners(0)
 const responseObject = {
 
   "bewerber": "Danke für die Bewerbung! Die @/Clan-Anführer und @/Clan-Vice-Anführer werden sich so bald wie möglich darum kümmern.",  
