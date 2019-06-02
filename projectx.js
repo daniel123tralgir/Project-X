@@ -48,7 +48,6 @@ const sayObject = {
   "WOW": "SRY ICH KANN NIX",
   "?play": "kein Bock",
    "wat": "Say what?",
-  "lol": "roflmaotntpmp",
   "tja": "kaTJA",
     "TJA": "kaTJA",
       "ik": "terIK",
