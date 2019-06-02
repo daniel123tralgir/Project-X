@@ -12,6 +12,7 @@ const responseObject = {
 
   
 };
+const thisWord = "something";
 const sayObject = {
   "play": "nein",
     "Play": "nein",
@@ -39,33 +40,37 @@ const sayObject = {
     "WAS DAS": "PIZZA?",
       "Was das": "Pizza?",
     "was Das": "Pizza?",
-
-
-  "bye": "auf wiederhören",
-    "Bye": "auf wiederhören",
-    "BYE": "auf wiederhören",
-  "bb": "schüss",
   "wow": "sry ich kann nix",
   "hellwach": "ok cool",
   "wow": "sry ich kann nix",
   "Wow": "sry ich kann nix",
   "WOW": "SRY ICH KANN NIX",
-
   "?play": "kein Bock",
-  
-    "wat": "Say what?",
+   "wat": "Say what?",
   "lol": "roflmaotntpmp",
   "schau Katzenvideos": "ok",
   "oof": "big oof",
-
- "tja": "Thorsten",
-     "Tja": "Thorsten",
+  "tja": "kaTJA",
+    "TJA": "kaTJA",
+      "ik": "terIK",
+      "IK": "terIK",
+      "Ik": "terIK",
+      "werner": "Werner will dir nicht antworten",
+      "Werner": "Werner will dir nicht antworten",
+        "WERNER": "Werner will dir nicht antworten",
+        "werner?": "Werner will dir nicht antworten",
+      "Werner?": "Werner will dir nicht antworten",
+        "WERNER?": "Werner will dir nicht antworten",
+     "Tja": "kaTJA",
               "koala?": "= Noob",
         "alisa": "mag Fisch",
         "Alisa": "mag Fisch",
         "oh": "yeah nahui",
         "ach komm": "ja",
-  "hahaha": "rofl"
+  "hahaha": "rofl",
+    "Hahaha": "rofl",
+    "HAHAHA": "ROFL LMAO XD LOL"
+  
   
 };
 
@@ -82,6 +87,16 @@ bot.on('ready', () => {
     // For example:
     // client.user.setActivity("TV", {type: "WATCHING"})
 })
+
+//wordcontain
+bot.on('message', (message) => {
+  if(message.content.includes(thisWord)) {
+    message.channel.send('is geil');
+}
+
+  }
+);
+
 //testmessage.content.toLowerCase()
 bot.on('message', (message) => {
   if (message.content.toLowerCase() === 'koala') {
@@ -133,6 +148,17 @@ bot.on('message', (message) => {
     message.channel.send('Geh weg');
 }else{
     message.channel.send('Tschüss;)');
+}
+
+  }
+});
+//new
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'bye') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('Geh weg');
+}else{
+    message.channel.send('auf wiederhören');
 }
 
   }
