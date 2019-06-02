@@ -61,6 +61,13 @@ const sayObject = {
         "Alisa": "mag Fisch",
         "oh": "yeah nahui",
         "ach komm": "ja",
+      "halts maul": "sry",
+        "halts Maul": "sry",
+        "Halts Maul": "sry",     
+        "HALTS MAUL": "SRY",
+        "": "",
+        "": "",
+
   "hahaha": "rofl",
     "Hahaha": "rofl",
     "HAHAHA": "ROFL LMAO XD LOL"
@@ -104,7 +111,7 @@ bot.on('message', (message) => {
   else{
   if(message.content.toLowerCase().includes(thisWordone)) {
     if(message.member.roles.find(x => x.name === "Admin")){
-    message.channel.send('@Mxxthi#1603  muss dir antworten');
+    message.channel.send('Werner  muss dir antworten');
 }else{
     message.channel.send('Werner will dir nicht antworten');
 }
