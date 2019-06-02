@@ -90,7 +90,7 @@ bot.on('ready', () => {
 
 //wordcontain
 bot.on('message', (message) => {
-  if(message.content.includes.toLowerCase()(thisWord)) {
+  if(message.content.toLowerCase().includes(thisWord)) {
     message.channel.send('is geil');
 }
 
