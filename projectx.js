@@ -16,9 +16,6 @@ const sayObject = {
   "play": "nein",
     "Play": "nein",
     "PLAY": "NEIN",
-  "xD": "witzig...",
-    "Xd": "witzig...",
-    "XD": "witzig...",
     "haha": "witzig...",
   "deutschland": "Lebt",
     "Deutschland": "Lebt",
@@ -42,15 +39,8 @@ const sayObject = {
     "WAS DAS": "PIZZA?",
       "Was das": "Pizza?",
     "was Das": "Pizza?",
-  "Ja": "ja",
-    "ja": "ja",
-    "JA": "NEIN",
-  "Nein": "nö",
-    "nein": "nö",
-      "NEIN": "NÖ",
-  "nö": "nein",
-    "Nö": "nein",
-    "NÖ": "NEIN",
+
+
   "bye": "auf wiederhören",
     "Bye": "auf wiederhören",
     "BYE": "auf wiederhören",
@@ -209,7 +199,50 @@ bot.on('message', (message) => {
   }
 });
 //new
+  bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'nö') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('DOCH');
+}else{
+    message.channel.send('nein');
+}
 
+  }
+});
+//new
+  bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'nein') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('doch');
+}else{
+    message.channel.send('nö');
+}
+
+  }
+});
+//new
+  bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'ja') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('nö');
+}else{
+    message.channel.send('ja');
+}
+
+  }
+});
+//new
+  bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'xd') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('hdf Koala');
+}else{
+    message.channel.send('witzig...');
+}
+
+  }
+});
+//new
 
 
 bot.on('message', (message) => {
