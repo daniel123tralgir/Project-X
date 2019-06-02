@@ -56,12 +56,6 @@ const sayObject = {
       "ik": "terIK",
       "IK": "terIK",
       "Ik": "terIK",
-      "werner": "Werner will dir nicht antworten",
-      "Werner": "Werner will dir nicht antworten",
-        "WERNER": "Werner will dir nicht antworten",
-        "werner?": "Werner will dir nicht antworten",
-      "Werner?": "Werner will dir nicht antworten",
-        "WERNER?": "Werner will dir nicht antworten",
      "Tja": "kaTJA",
               "koala?": "= Noob",
         "alisa": "mag Fisch",
@@ -111,7 +105,7 @@ bot.on('message', (message) => {
   else{
   if(message.content.toLowerCase().includes(thisWordone)) {
     if(message.member.roles.find(x => x.name === "Admin")){
-    message.channel.send('@Mxxthi#1603 muss dir antworten');
+    message.channel.send('@Mxxthi#1603  muss dir antworten');
 }else{
     message.channel.send('Werner will dir nicht antworten');
 }
