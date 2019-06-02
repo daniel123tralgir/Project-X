@@ -107,6 +107,9 @@ bot.on('message', (message) => {
 //testmessage.content.toLowerCase()
 //test
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'katja') {
     if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('ich liebe dich');
@@ -114,21 +117,27 @@ bot.on('message', (message) => {
     message.channel.send('is geil');
 }
 
-  }
+  }}
 });
 //new
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'gn') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('Nein');
 }else{
     message.channel.send('Gute Nacht Schätzchen;)');
-}
+}}
 
   }
 });
 //new
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'gn8') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('Nein');
@@ -136,10 +145,13 @@ bot.on('message', (message) => {
     message.channel.send('Gute Nacht Schätzchen;)');
 }
 
-  }
+  }}
 });
 //new
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'bb') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('Geh weg');
@@ -147,21 +159,27 @@ bot.on('message', (message) => {
     message.channel.send('Tschüss;)');
 }
 
-  }
+  }}
 });
 //new
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'bye') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('Geh weg');
 }else{
     message.channel.send('auf wiederhören');
 }
-
+  }
   }
 });
 //new
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'afk') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('halts maul Koala');
@@ -169,34 +187,43 @@ bot.on('message', (message) => {
     message.channel.send('halts maul Werner');
 }
 
-  }
+  }}
 });
 //new
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'spiel fortnite') {
     if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('okay');
           bot.user.setActivity("Fortnite",{type: "PLAYING"} )
 }else{
     message.channel.send('kein Bock');
-}
+}}
 
   }
 });
 //new
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'spiel night dream') {
     if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('okay');
           bot.user.setActivity("NIGHT DREAM",{type: "PLAYING"} )
 }else{
     message.channel.send('kein Bock');
-}
+}}
 
   }
 });
 //new
 bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'pass auf koala auf') {
     if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('Gerne;))))');
@@ -207,10 +234,13 @@ bot.on('message', (message) => {
     message.channel.send('kein Bock');
 }
 
-  }
+  }}
 });
 //new
   bot.on('message', (message) => {
+       if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'schau xxx') {
     if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('Gerne!');
@@ -219,50 +249,62 @@ bot.on('message', (message) => {
     message.channel.send('kein Bock');
 }
 
-  }
+  }}
 });
 //new
   bot.on('message', (message) => {
+       if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'nö') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('DOCH');
 }else{
     message.channel.send('nein');
 }
-
+  }
   }
 });
 //new
   bot.on('message', (message) => {
+       if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'nein') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('doch');
 }else{
     message.channel.send('nö');
-}
+}}
 
   }
 });
 //new
   bot.on('message', (message) => {
+       if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'ja') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('nö');
 }else{
     message.channel.send('ja');
 }
-
+  }
   }
 });
 //new
   bot.on('message', (message) => {
+       if(message.author.bot) return;
+
+  else{
   if (message.content.toLowerCase() === 'xd') {
     if(message.member.roles.find(x => x.name === "Mod")){
     message.channel.send('hdf Koala');
 }else{
     message.channel.send('witzig...');
 }
-
+  }
   }
 });
 //new
