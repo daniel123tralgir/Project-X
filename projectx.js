@@ -65,8 +65,12 @@ const sayObject = {
         "halts Maul": "sry",
         "Halts Maul": "sry",     
         "HALTS MAUL": "SRY",
-        "": "",
-        "": "",
+        "why you bully me": "weil du ein Noob bist",
+        "why you bully me?": "weil du ein Noob bist",
+          "Why you bully me?": "weil du ein Noob bist",
+          "WHY YOU BULLY ME?": "weil du ein NOOB bist",
+            "Why you bully me": "weil du ein Noob bist",
+          "WHY YOU BULLY ME": "weil du ein NOOB bist",
 
   "hahaha": "rofl",
     "Hahaha": "rofl",
@@ -123,6 +127,34 @@ bot.on('message', (message) => {
 
 //testmessage.content.toLowerCase()
 //test
+bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
+  if (message.content.toLowerCase() === 'rom') {
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('ROMeo');
+}else{
+    message.channel.send('ROMeo');
+}
+
+  }}
+});
+//new
+bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
+  if (message.content.toLowerCase() === 'ko') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('Kotflügel');
+}else{
+    message.channel.send('KOala');
+}
+
+  }}
+});
+//new
 bot.on('message', (message) => {
      if(message.author.bot) return;
 
