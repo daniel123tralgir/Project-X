@@ -90,13 +90,16 @@ bot.on('ready', () => {
 
 //wordcontain
 bot.on('message', (message) => {
+   if(message.author.bot) return;
+
+  else{
   if(message.content.toLowerCase().includes(thisWord)) {
     if(message.member.roles.find(x => x.name === "Admin")){
     message.channel.send('Koala is geil');
 }else{
     message.channel.send('Koala stinkt');
 }
-}
+}}
 
   }
 );
