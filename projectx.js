@@ -9,9 +9,6 @@ const responseObject = {
   
 };
 const sayObject = {
-  "afk": "halts maul werner",
-    "Afk": "halts maul werner",
-      "AFK": "halts maul werner",
   "play": "nein",
     "Play": "nein",
     "PLAY": "NEIN",
@@ -58,15 +55,27 @@ const sayObject = {
     "Bye": "auf wiederhören",
     "BYE": "auf wiederhören",
   "bb": "schüss",
-  "gn": "Gute Nacht Schätzchen;)",        
-  "gn8": "Gute Nacht",
   "wow": "sry ich kann nix",
   "hellwach": "ok cool",
   "wow": "sry ich kann nix",
-  "wow": "sry ich kann nix",
-  "wow": "sry ich kann nix",
-  "wow": "sry ich kann nix",
+  "Wow": "sry ich kann nix",
+  "WOW": "SRY ICH KANN NIX",
+
   "?play": "kein Bock"
+  
+    "wat": "Say what?",
+  "lol": "roflmaotntpmp",
+  "schau Katzenvideos": "ok",
+  "oof": "big oof",
+
+ "tja": "Thorsten",
+     "Tja": "Thorsten",
+              "koala?": "= Noob",
+        "alisa": "mag Fisch",
+        "Alisa": "mag Fisch",
+        "oh": "yeah nahui",
+        "ach komm": "ja",
+  "hahaha": "rofl",
   
 };
 
@@ -95,7 +104,61 @@ bot.on('message', (message) => {
   }
 });
 //test
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'katja') {
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('ich liebe dich');
+}else{
+    message.channel.send('is geil');
+}
 
+  }
+});
+//new
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'gn') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('Nein');
+}else{
+    message.channel.send('Gute Nacht Schätzchen;)');
+}
+
+  }
+});
+//new
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'gn8') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('Nein');
+}else{
+    message.channel.send('Gute Nacht Schätzchen;)');
+}
+
+  }
+});
+//new
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'bb') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('Geh weg');
+}else{
+    message.channel.send('Tschüss;)');
+}
+
+  }
+});
+//new
+bot.on('message', (message) => {
+  if (message.content.toLowerCase() === 'afk') {
+    if(message.member.roles.find(x => x.name === "Mod")){
+    message.channel.send('halts maul Koala');
+}else{
+    message.channel.send('halts maul Werner');
+}
+
+  }
+});
+//new
 
 
 
