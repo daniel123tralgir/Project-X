@@ -86,10 +86,10 @@ bot.on('ready', () => {
 //test
 bot.on('message', (message) => {
   if (message.content === 'ping') {
-    if(message.member.roles.find("name", "Admin")){
-    message.reply('Pong!');
+    if(message.member.roles.find("name", "Noob")){
+    message.channel.send('Pong!');
 }else{
-    message.reply('no');
+    message.channel.send('no');
 }
 
   }
