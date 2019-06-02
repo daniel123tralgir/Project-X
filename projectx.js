@@ -14,6 +14,7 @@ const responseObject = {
 };
 const thisWord = "koala";
 const thisWordone = "werner";
+const thisWordtwo = "haha";
 const sayObject = {
   "play": "nein",
     "Play": "nein",
@@ -77,10 +78,8 @@ const sayObject = {
           "WHY YOU BULLY ME?": "weil du ein NOOB bist",
             "Why you bully me": "weil du ein Noob bist",
           "WHY YOU BULLY ME": "weil du ein NOOB bist",
+  "": "",
 
-  "hahaha": "rofl",
-    "Hahaha": "rofl",
-    "HAHAHA": "ROFL LMAO XD LOL"
   
   
 };
@@ -98,7 +97,21 @@ bot.on('ready', () => {
     // For example:
     // client.user.setActivity("TV", {type: "WATCHING"})
 })
+//wordcontain
+bot.on('message', (message) => {
+   if(message.author.bot) return;
 
+  else{
+  if(message.content.toLowerCase().includes(thisWordtwo)) {
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('hahaha');
+}else{
+    message.channel.send('ROFL LMAO XD LOL');
+}
+}}
+
+  }
+);
 //wordcontain
 bot.on('message', (message) => {
    if(message.author.bot) return;
