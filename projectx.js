@@ -19,7 +19,6 @@ const sayObject = {
   "play": "nein",
     "Play": "nein",
     "PLAY": "NEIN",
-    "haha": "witzig...",
   "deutschland": "Lebt",
     "Deutschland": "Lebt",
     "DEUTSCHLAND": "LEBT",
