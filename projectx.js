@@ -12,7 +12,7 @@ const responseObject = {
 
   
 };
-const thisWord = "something";
+const thisWord = "koala";
 const sayObject = {
   "play": "nein",
     "Play": "nein",
