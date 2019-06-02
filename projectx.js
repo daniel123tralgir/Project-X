@@ -96,11 +96,7 @@ bot.on('message', msg => {
 });
 //test
 
-if(message.member.roles.find("name", "Admin")){
-  // Rest of your code
-}else{
-  // not vip
-}
+
 
 
 bot.on('message', (message) => {
