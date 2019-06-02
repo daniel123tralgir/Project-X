@@ -85,11 +85,11 @@ bot.on('ready', () => {
 })
 //test
 bot.on('message', (message) => {
-  if (message.content === 'ping') {
-    if(message.member.roles.find("name", "Noob")){
-    message.channel.send('Pong!');
+  if (message.content === 'Koala') {
+    if(message.member.roles.find(x => x.name === "admini")){
+    message.channel.send('is geil');
 }else{
-    message.channel.send('no');
+    message.channel.send('Stinkt');
 }
 
   }
