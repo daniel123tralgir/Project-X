@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const emitter = new EventEmitter()
+emitter.setMaxListeners(0)
 const Welcome = require("./welcome.js");
 const bot = new Discord.Client();
 const responseObject = {
