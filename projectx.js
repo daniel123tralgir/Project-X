@@ -165,8 +165,8 @@ bot.on('message', (message) => {
 
   else{
   if(message.content.toLowerCase().includes(thisWordone)) {
-    if(message.member.roles.find(x => x.name === "Clan Mitglied")){
-    message.channel.send('Werner  muss dir antworten');
+    if(message.member.roles.find(x => x.name === "Der Werner")){
+    message.channel.send('Ich bin der Werner');
 }else{
     message.channel.send('Werner will dir nicht antworten');
 }
