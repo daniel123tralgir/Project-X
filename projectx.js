@@ -337,6 +337,24 @@ bot.on('message', (message) => {
   }}
 });
 //new
+//new
+bot.on('message', (message) => {
+     if(message.author.bot) return;
+
+  else{
+  if (message.content.toLowerCase() === 'hallo') {
+    if(message.member.roles.find(x => x.name === "Der Werner")){
+    message.channel.send('Ave Werner, morituri te salutant');
+  
+    else if(message.member.roles.find(x => x.name === "Mod")){
+    message.reply(', du bist jetzt mal still');
+}else{
+    message.channel.send('Hi!');
+}
+
+  }}
+});
+//new
   bot.on('message', (message) => {
        if(message.author.bot) return;
 
