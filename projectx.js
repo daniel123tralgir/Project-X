@@ -344,7 +344,7 @@ bot.on('message', (message) => {
   else{
   if (message.content.toLowerCase() === 'hallo') {
     if(message.member.roles.find(x => x.name === "Der Werner")){
-    message.channel.send('Ave Werner, morituri te salutant');
+    message.channel.send('Ave Werner, morituri te salutant');}
   
     else if(message.member.roles.find(x => x.name === "Mod")){
     message.reply(', du bist jetzt mal still');
