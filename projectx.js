@@ -60,7 +60,7 @@ const sayObject = {
         "HUH": "HÖ",
         "Huh": "hö",
      "Tja": "kaTJA",
-              "koala?": "= Noob",
+             
         "alisa": "mag Fisch",
         "Alisa": "mag Fisch",
         "oh": "yeah nahui",
@@ -144,21 +144,7 @@ bot.on('message', (message) => {
 
   }
 );
-//wordcontain
-bot.on('message', (message) => {
-   if(message.author.bot) return;
 
-  else{
-  if(message.content.toLowerCase().includes(thisWord)) {
-    if(message.member.roles.find(x => x.name === "Admin")){
-    message.channel.send('Koala is geil');
-}else{
-    message.channel.send('Koala stinkt');
-}
-}}
-
-  }
-);
 //wordcontain
 bot.on('message', (message) => {
    if(message.author.bot) return;
@@ -198,7 +184,7 @@ bot.on('message', (message) => {
   else{
   if (message.content.toLowerCase() === 'ko') {
     if(message.member.roles.find(x => x.name === "Mod")){
-    message.channel.send('Kotflügel');
+    message.channel.send('KOala');
 }else{
     message.channel.send('KOala');
 }
@@ -226,7 +212,7 @@ bot.on('message', (message) => {
   else{
   if (message.content.toLowerCase() === 'gn') {
     if(message.member.roles.find(x => x.name === "Mod")){
-    message.channel.send('Nein');
+    message.channel.send('Gn Koala :heart::heart: ');
 }else{
     message.channel.send('Gute Nacht Schätzchen;)');
 }}
@@ -240,7 +226,7 @@ bot.on('message', (message) => {
   else{
   if (message.content.toLowerCase() === 'gn8') {
     if(message.member.roles.find(x => x.name === "Mod")){
-    message.channel.send('Nein');
+    message.channel.send('Gn8 Koala :heart::heart: ');
 }else{
     message.channel.send('Gute Nacht Schätzchen;)');
 }
@@ -254,7 +240,7 @@ bot.on('message', (message) => {
   else{
   if (message.content.toLowerCase() === 'bb') {
     if(message.member.roles.find(x => x.name === "Mod")){
-    message.channel.send('Geh weg');
+    message.channel.send('Tschüss Koala:heart::heart:!');
 }else{
     message.channel.send('Tschüss;)');
 }
@@ -268,7 +254,7 @@ bot.on('message', (message) => {
   else{
   if (message.content.toLowerCase() === 'bye') {
     if(message.member.roles.find(x => x.name === "Mod")){
-    message.channel.send('Geh weg');
+    message.channel.send('Bye Koala:heart:!');
 }else{
     message.channel.send('auf wiederhören');
 }
@@ -281,8 +267,8 @@ bot.on('message', (message) => {
 
   else{
   if (message.content.toLowerCase() === 'afk') {
-    if(message.member.roles.find(x => x.name === "Mod")){
-    message.channel.send('halts maul Koala');
+    if(message.member.roles.find(x => x.name === "Admin")){
+    message.channel.send('halts maul Katja');
 }else{
     message.channel.send('halts maul Werner');
 }
@@ -347,7 +333,7 @@ bot.on('message', (message) => {
     message.channel.send('Ave Werner, morituri te salutant');}
   
     else if(message.member.roles.find(x => x.name === "Mod")){
-    message.reply(', du bist jetzt mal still');
+    message.reply(', sei gegrüsst!');
 }else{
     message.channel.send('Hi!');
 }
@@ -418,7 +404,7 @@ bot.on('message', (message) => {
   else{
   if (message.content.toLowerCase() === 'xd') {
     if(message.member.roles.find(x => x.name === "Mod")){
-    message.channel.send('hdf Koala');
+    message.channel.send('lol');
 }else{
     message.channel.send('witzig...');
 }
